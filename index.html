@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <style>
+
         @media (max-width :700px) {
 
             .myHeader {
@@ -33,7 +34,7 @@
             .myInd {
                 position : fixed;
                 top : 90px;
-                left : -150px;
+                left : 10px;
                 width : 200px;
                 padding : 0 10px 50px;
                 border-style: solid;
@@ -59,18 +60,6 @@
                 color: blanchedalmond;
             }
             
-            #closeWindow {
-                position : absolute;
-                font-size: xx-large;
-                top : 10px;
-                left : 10px;
-            }
-
-            #closeWindow:hover {
-                background-color: black;
-                color : white;
-
-            }
          
         }
     </style>
@@ -89,10 +78,6 @@
 
         function openMenu() {
             document.getElementById("myIndID").style.opacity= "1";
-            document.getElementById("myIndID").style.transform = "translate(155px)";
-        }
-        function closeWindow() {
-            document.getElementById("myIndID").style.opacity= "0";
         }
     </script>
 </head>
@@ -107,7 +92,6 @@
     
         <!-- Code for index panel -->
         <nav class="myInd" id = "myIndID">
-            <div id="closeWindow" onclick="closeWindow()">X</div>
             <h2>Index</h2>
             <p onclick="handleDogClick()">Dog</p>
             <p>Cat</p>
