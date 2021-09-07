@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin :0;
@@ -17,7 +16,7 @@ h2 {
                         "footer footer footer";
 }
 
- .myHeader {
+.myHeader {
     grid-area : banner;
     background-color: lightgreen;
     display : grid;
@@ -25,22 +24,22 @@ h2 {
    
 }
 
- #headerImage {
+#headerImage {
     position : absolute;
     left : 10px;
     top : 0;
     
 }
 
- #headerImage:hover {
+#headerImage:hover {
 
-    border-style: solid;
-    transform: scale(5) rotate(20deg) translate(50px,50px);
-    transition: 1s;
+    
+    transform: scale(1.1);
+    transition: .5s;
 
 }
 
- .myHeader h1 {
+.myHeader h1 {
     margin : 0;
     display:grid;
     place-content: center;
@@ -61,9 +60,9 @@ h2 {
 .myBody {
     grid-area : body;
     background-color: lightyellow;
-    padding-right : 5px;
-    padding-left: 5px;
+    padding : 0 80px 10px;
     overflow : scroll;
+    line-height: 150%;
 
     
 }
