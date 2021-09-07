@@ -20,7 +20,7 @@ h2 {
     grid-area : banner;
     background-color: lightgreen;
     display : grid;
-    place-content: center;
+    place-content: left;
    
 }
 
