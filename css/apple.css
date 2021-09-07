@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin :0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wrapper {
+    display :grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "banner banner banner"
+                        "nav body side"
+                        "footer footer footer";
+}
+
+ .myHeader {
+    grid-area : banner;
+    background-color: lightgreen;
+    display : grid;
+    place-content: center;
+   
+}
+
+ #headerImage {
+    position : absolute;
+    left : 10px;
+    top : 0;
+    
+}
+
+ #headerImage:hover {
+
+    border-style: solid;
+    transform: scale(5) rotate(20deg) translate(50px,50px);
+    transition: 1s;
+
+}
+
+ .myHeader h1 {
+    margin : 0;
+    display:grid;
+    place-content: center;
+}
+.myInd { 
+    grid-area : nav;
+    background-color: pink;
+    text-align: center;
+    
+}
+.myNews {
+    grid-area : side;
+    background-color: lightgrey;
+    padding-right : 5px;
+    padding-left: 5px;
+    
+}
+.myBody {
+    grid-area : body;
+    background-color: lightyellow;
+    padding-right : 5px;
+    padding-left: 5px;
+    overflow : scroll;
+
+    
+}
+.myBody img {
+    width : 80px;
+}
+.footer {
+    grid-area : footer;
+    background-color: black;
+    color: white;
+    font-size: x-small;
+    display : grid;
+    place-content: center;
+}

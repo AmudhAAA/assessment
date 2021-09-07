@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apple.css">
+
+    <style>
+        @media (max-width :700px) {
+            .myBody {
+                background-color: brown;
+            }
+            .wrapper {
+                display :grid;
+                grid-template-columns: 100vw;
+                grid-template-rows: 10vh auto auto auto 10vh;
+                grid-template-areas: "banner"
+                                    "nav"
+                                    "body"
+                                    "side"
+                                    "footer";
+            }
+
+            .myInd {
+                display : flex;
+                justify-content: space-evenly;
+                padding : 10px;
+            }
+
+            .myInd p {
+                background-color: bisque;
+                width : 15%;
+                padding : 10px;
+            }
+            .myInd h2 {
+                visibility: hidden;
+            }
+            
+        }
+    </style>
+
+    <script>
+        function handleDogClick() {
+            var myHeaderStatus = document.getElementById("myBanner").innerHTML;
+
+            if (myHeaderStatus == "Animals are Cute") {
+                document.getElementById("myBanner").innerHTML = "Dogs are Cute";
+            } else {
+                document.getElementById("myBanner").innerHTML = "Animals are Cute";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!---applmvnbjm csjnfkfn-->>
+        <div class="myHeader">
+            <img src="download.jfif" id="headerImage" width=80px alt="">
+            <h1 id="myBanner">Animals are Cute</h1>
+        </div>
+    
+        <!-- Code for index panel -->
+        <nav class="myInd">
+            <h2>Index</h2>
+            <p onclick="handleDogClick()">Dog</p>
+            <p>Cat</p>
+            <p>option 3</p>
+            <p>option 4</p>
+        </nav>
+    
+        <!-- Code for news panel -->
+        <div class=myNews>
+            <h2>News</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+    
+        <!-- Code for the main body panel -->
+        <div class="myBody">
+            <h2>Body</h2>
+            ni, corporis akudjgfusfbwifassumenda obcaecati sint, doloremque vitae? Aperiam vel, architecto reprehenderit nihil quasi ipsum repellendus. Corrupti atque debitis eveniet sint excepturi minima nesciunt sapiente vitae voluptate quisquam. Cum adipisci maiores nam harum incidunt? Voluptates amet quas itaque debitis animi repellat ex sunt tempora quis pariatur, distinctio totam praesentium quod sit molestiae velit soluta molestias qui mollitia tenetur non minima eos? Voluptas ipsa quasi deleniti commodi ipsum doloremque porro repellendus consequatur magnam tempore, dolorum, consequuntur nam quis cumque fugiat corporis? Dignissimos esse recusandae nam impedit, similique fugiat dicta sequi doloribus illum a aliquam laboriosam provident dolore, incidunt voluptates eaque error repellendus. Error voluptatibus officia ut numquam modi ducimus. Excepturi deleniti quis praesentium commodi error incidunt beatae modi illum.
+        </div>
+    
+        <div class="footer">Copyright 202012
+        
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
