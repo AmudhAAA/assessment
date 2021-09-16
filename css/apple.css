@@ -40,7 +40,7 @@ h2 {
 }
 
 .myHeader h1 {
-    margin : 0;
+    margin : 10;
     display:grid;
     place-content: center;
 }
