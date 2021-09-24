@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div>
+      
+      <div class="nav" id="mynav">
+                <a href="index.html" >Home</a>
+                <a href="News.html">News</a>
+                <a href="blog.html">Blog page</a>
+                <a href="About.html"class="active">About</a>
+                <a href="Contact.html">Contact</a>
+                <!-- Executes myFunction when the user clicks on hamburger.png-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <img src= "images/hamburger.png" width=25px alt="">
+                </a>
+            
+              </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/model1 - Copy.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>I am so smart and awesome yeah.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="images/model2.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Michelle Ross</h2>
+              <p class="title">Enthusiastic Foodie</p>
+              <p>I eat food all day every day of the year.</p>
+              <p>michelle@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="images/model3.png" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Kristy Doe</h2>
+              <p class="title">Head Photographer</p>
+              <p>I take photos of food all day every day of the year.</p>
+              <p>kristy@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="footer">
+        <p> Copyright AB</p>
+    </div>
+</div>
+<script>
+    //Adds the 'responsive' class to the nav when user clicks on the icon.
+function myFunction() {
+  var x = document.getElementById("mynav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
+
+</body>
+</html>

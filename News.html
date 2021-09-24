@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="about-section">
+        <h1>Dessert hall of fame</h1>
+        <p>The best dessert we have ever tasted</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div>
+      
+      <div class="nav" id="mynav">
+        <a href="index.html" >Home</a>
+        <a href="News.html"class="active">News</a>
+        <a href="blog.html">Blog page</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+                <!-- Executes myFunction when the user clicks on hamburger.png-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <img src= "images/hamburger.png" width=20px alt="">
+                </a>
+            
+              </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/YYum.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Choc delight</h2>
+              <p class="title">The sharing plate</p>
+              <p>Yum Yum Yum Yum Yum Yum Yum Yum Yum</p>
+              <p>cafedelites.com</p>
+              <p><button class="button">Locate</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="images/Yum.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Icecream bowl</h2>
+              <p class="title">World Famous</p>
+              <p>Yum Yum Yum Yum Yum Yum Yum Yum Yum</p>
+              <p>cafedelites.com</p>
+              <p><button class="button">Locate</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="images/sundae.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Sundae</h2>
+              <p class="title">Irresistable</p>
+              <p>Yum Yum Yum Yum Yum Yum Yum Yum Yum</p>
+              <p>cafedelites.com</p>
+              <p><button class="button">Locate</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="images/panwaf.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Pancakes & Waffles</h2>
+                <p class="title">Delicious Duo</p>
+                <p>Yum Yum Yum Yum Yum Yum Yum Yum Yum</p>
+                <p>cafedelites.com</p>
+                <p><button class="button">Locate</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="images/scroll.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Scrumptious Scrolls</h2>
+                <p class="title">Divine dessertsr</p>
+                <p>Yum Yum Yum Yum Yum Yum Yum Yum Yum</p>
+                <p>cafedelites.com</p>
+                <p><button class="button">Locate</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="images/classic.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>All-time classics</h2>
+                <p class="title">Classic combo</p>
+                <p>Yum Yum Yum Yum Yum Yum Yum Yum Yum</p>
+                <p>cafedelites.com</p>
+                <p><button class="button">Locate</button></p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      <div class="footer">
+        <p> Copyright AB</p>
+    </div>
+</div>
+<script>
+    //Adds the 'responsive' class to the nav when user clicks on the icon.
+function myFunction() {
+  var x = document.getElementById("mynav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
+
+</body>
+</html>
