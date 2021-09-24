@@ -5,118 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/apple.css">
-    <style>
-
-        @media (max-width :700px) {
-
-            .myHeader {
-                position : fixed;
-                width : 100%;
-                height : 80px;
-                
-            }
+    <link rel="stylesheet" href="css/index.css">
+ </head>
+        <body>
+        <div class="wrapper">
+            <div class="nav" id="mynav">
+                <a href="index.html" class="active">Home</a>
+                <a href="News.html">News</a>
+                <a href="blog.html">Blog page</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+                <!-- Executes myFunction when the user clicks on hamburger.png-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <img src= "images/hamburger.png" width=20px alt="">
+                </a>
             
-            .myBody {
-                background-color:coral;
-                padding-top : 100px;
-            }
-            .wrapper {
-                display :grid;
-                grid-template-columns: 100vw;
-                grid-template-rows: auto auto 10vh;
-                grid-template-areas:
-                                    "body"
-                                    "side"
-                                    "footer";
-            }
+              </div>
+              
+             <div class="header" id="myheader">
+                <img src="images/dessert.jpg" class="headerimg" alt="">
+                <h1>Dessert Blog</h1>
+             </div>
+             <button onclick="myFunctiono()" class="content">Content</button>
+             <div class="mycontent" id="mycontent">
+               <h2></h2>
+               <ul>
+               <li><a href="#myheader">Header</a></li>
+               <li><a href="#mycontentone">Content one</a></li>
+               <li><a href="#mycontenttwo">Content two</a></li>
+               <li><a href="#mycontentthree">Content three</a></li>
+               <li><a href="#mycontentfour">Content four</a></li>
+               </ul>
+             </div>
+            <div class="contentone" id="mycontentone">
+                <img src="images/canoli.jpg" style="width:100%">
+                <h2><b>Creamy Cannoli</b></h2>
+                <h5>Heavenly food, October 30 2020</h5>
+                <p> Cannoli (Italian: [kanˈnɔːli]; Sicilian: cannola [kanˈnɔːla]) are Italian pastries consisting of tube-shaped shells of fried pastry dough, filled with a sweet, creamy filling usually containing ricotta—a staple of Sicilian cuisine.[1][2] They range in size from 9 centimetres (3.5 in) to 20 centimetres (7.9 in).</p>
+                <p><button class="button"><b>READ MORE »</b></button></p>
+            </div>
+            <div class="contenttwo" id="mycontenttwo">
+               <Img src="images/cacake.jpg" style="width:100%">
+                <h2><b>Luscious Cakes</b></h2>
+                <h5>The king of cakes, October 23 2020</h5>
+                <p>Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and that share features with other desserts such as pastries. </p>
+                <p><button class="button"><b>READ MORE »</b></button></p>
+            </div>
+             <div class="contentthree" id="mycontentthree">
+                <h2>In October</h2>
+                <ul>
+                    <li>Cannoli</li>
+                    <li>Cake</li>
+                    <li>Sundaes</li>
+                  </ul>
+                <h2>In September</h2>
+                <ul>
+                    <li>Pancakes</li>
+                    <li>Waffles</li>
+                    <li>Crepes</li>
+                </ul>
+            </div>
+            <div class="contentfour" id="mycontentfour">
+               <h2>Monthly Coverage</h2> 
+                <table>
+                    <tr>
+                      <th>September</th>
+                      <th>October</th>
+                    </tr>
+                    <tr>
+                      <td>Cannoli</td>
+                      <td>Pancakes</td>
+                    </tr>
+                    <tr>
+                      <td>Cake</td>
+                      <td>Waffles</td>
+                    </tr>
+                    <tr>
+                        <td>Sundaes</td>
+                        <td>Crepes</td>
+                      </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>July</th>
+                      <th>August</th>
+                    </tr>
+                    <tr>
+                      <td>Icecream Bowl</td>
+                      <td>Churros</td>
+                    </tr>
+                    <tr>
+                      <td>Milkshakes</td>
+                      <td>Gelato</td>
+                    </tr>
+                    <tr>
+                        <td>Tiramisu</td>
+                        <td>Cheesecake</td>
+                      </tr>
+                  </table>
+            </div>
+            <div class="footer">
+                <p>Copyright AB</p>
+            </div>
 
-            .myInd {
-                position : fixed;
-                top : 90px;
-                left : 10px;
-                width : 200px;
-                padding : 0 10px 50px;
-                border-style: solid;
-                border-width : thin;
-                opacity : 0%;
-                transition : 1s;
-            }
-
-            .myInd p {
-                background-color: bisque;
-                width : 50%;
-                padding : 10px;
-                margin : 0 auto;
-                margin-bottom : 10px;
-                border-style: solid;
-                border-width : thin;
-                transition :.5s;
-
-            }
-
-            .myInd p:hover {
-                background-color: black;
-                color: blanchedalmond;
-            }
-            
-         
-        }
-    </style>
-
-    <script>
-        function handleDogClick() {
-            var myHeaderStatus = document.getElementById("myBanner").innerHTML;
-
-            if (myHeaderStatus == "Animals are Cute") {
-                document.getElementById("myBanner").innerHTML = "Dogs are Cute";
-            } else {
-                document.getElementById("myBanner").innerHTML = "Animals are Cute";
-            }
-            
-        }
-
-        function openMenu() {
-            document.getElementById("myIndID").style.opacity= "1";
-        }
-    </script>
-</head>
-<body>
-
-    <div class="wrapper">
-        <!-- Code for banner   -->
-        <div class="myHeader">
-            <img src="download.jfif" id="headerImage" onclick="openMenu()" width=80px alt="">
-            <h1 id="myBanner">Animals are Cute</h1>
+       
         </div>
-    
-        <!-- Code for index panel -->
-        <nav class="myInd" id = "myIndID">
-            <h2>Index</h2>
-            <p onclick="handleDogClick()">Dog</p>
-            <p>Cat</p>
-            <p>option 3</p>
-            <p>option 4</p>
-        </nav>
-    
-        <!-- Code for news panel -->
-        <div class=myNews>
-            <h2>News</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </div>
-    
-        <!-- Code for the main body panel -->
-        <div class="myBody">
-            <h2>Body</h2>
-            
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed deserunt praesentium ad laborum ab reprehenderit perspiciatis maiores illo? Maxime maiores, debitis beatae quod vero quia repellat quos minima obcaecati illo quae repudiandae similique molestiae deleniti. Libero alias dolorem possimus distinctio perferendis quasi, molestiae consectetur quia ad cum unde, voluptate, deleniti labore itaque in. Corporis, accusamus aliquam soluta saepe molestiae qui hic possimus! Saepe delectus facilis dolores dicta cupiditate dignissimos tempore voluptatibus iste deleniti magni laborum doloribus maiores omnis natus at atque corrupti accusantium, odit adipisci totam fugit? Ut modi eius voluptatibus molestias assumenda perspiciatis et obcaecati odio asperiores hic voluptatem sapiente, sed nihil eos temporibus. Quos vero pariatur ipsam nihil. Neque nobis quae totam sint provident iusto laboriosam, aliquid, modi, accusantium quibusdam libero sed consectetur tenetur numquam dicta odio vitae vero voluptas quod labore ducimus dolore? Accusamus, dignissimos animi eius labore facilis, quis ipsa ea quos quisquam possimus rem tenetur veniam maiores numquam totam laboriosam doloribus deleniti natus. Eligendi, velit? Corporis voluptatum nisi, fugit natus dignissimos ipsa perspiciatis consectetur maiores obcaecati, sequi ab asperiores provident, repellendus odio dolore assumenda. Recusandae asperiores, veniam saepe nobis id itaque voluptatem excepturi suscipit. Ab temporibus accusantium non tenetur officiis doloremque reiciendis obcaecati? Quos, deserunt.
-            Lorem ipsum dokolor sit amet consectetur adipisicing elit. Sapiente nam illo alias iure amet dignissimos dolor accusantium. Minus, aliquid alias. Aliquam similique repellat provident voluptatum possimus, aperiam quas reiciendis quibusdam amet animi expedita quae magnam quaerat! Quaerat molestiae facilis nihil doloremque odit temporibus, quia molestias necessitatibus atque voluptatem optio porro praesentium debitis unde voluptates corporis eaque, at iste itaque repudiandae amet dolorem, aperiam cupiditate vel! Placeat voluptatum doloribus cupiditate vel libero iste veniam. Fugit rem odit, voluptas impedit nobis vero maxime eveniet saepe magni, corporis assumenda obcaecati sint, doloremque vitae? Aperiam vel, architecto reprehenderit nihil quasi ipsum repellendus. Corrupti atque debitis eveniet sint excepturi minima nesciunt sapiente vitae voluptate quisquam. Cum adipisci maiores nam harum incidunt? Voluptates amet quas itaque debitis animi repellat ex sunt tempora quis pariatur, distinctio totam praesentium quod sit molestiae velit soluta molestias qui mollitia tenetur non minima eos? Voluptas ipsa quasi deleniti commodi ipsum doloremque porro repellendus consequatur magnam tempore, dolorum, consequuntur nam quis cumque fugiat corporis? Dignissimos esse recusandae nam impedit, similique fugiat dicta sequi doloribus illum a aliquam laboriosam provident dolore, incidunt voluptates eaque error repellendus. Error voluptatibus officia ut numquam modi ducimus. Excepturi deleniti quis praesentium commodi error incidunt beatae modi illum.
-        </div>
-    
-        <div class="footer">Copyright G.Horan 2021</div>
-    </div>
 
 
-    
+        
+        
+        <script>
+            //Adds the 'responsive' class to the nav when user clicks on the icon.
+        function myFunction() {
+          var x = document.getElementById("mynav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+        </script>
+        <script>
+            function myFunctiono() {
+              var x = document.getElementById("mycontent");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
+      
 </body>
 </html>
+        
